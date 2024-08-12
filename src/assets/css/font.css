@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.font-heading {
+  font-size: 26px !important;
+  font-weight: 700 !important;
+  line-height: 35.1px !important;
+}
+
+.font-subheading {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 24.8px !important;
+}
+
+.font-title {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  line-height: 19.12px !important;
+}
+
+.font-subtitle {
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  line-height: 16.39px !important;
+}
+
+.font-paragraph {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 16px !important;
+}
+
+.font-label,
+.mantine-InputWrapper-label {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 18px !important;
+}
+
+.font-desc,
+.mantine-InputWrapper-description,
+.mantine-InputWrapper-error {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 18px !important;
+}
+
+.font-body {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  line-height: 19.07px !important;
+}
+
+.font-title-content,
+.mantine-Modal-title { 
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  line-height: 26.1px !important;
+}
+
+.font-content {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 24.8px !important;
+}
+
+.font-caption {
+  font-size: 10px !important;
+  font-weight: 400 !important;
+  line-height: 12px !important;
+}
+
+.font-paragraph.bold,
+.font-body.bold,
+.font-caption.bold,
+.font-content.bold {
+  font-weight: 700 !important;
+}
+
+

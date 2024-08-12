@@ -1,0 +1,151 @@
+body {
+  @include light {
+    --mantine-color-text : var(--mantine-color-dark-6);
+    --mantine-color-solid: rgb(255, 255, 255) !important;
+    --mantine-color-body: rgba(255, 255, 255, 0.2) !important;
+    --mantine-background-card: rgba(255, 255, 255, 0.3) !important;
+  }
+  @include dark {
+    --mantine-color-text : var(--mantine-color-white);
+    --mantine-color-solid: rgb(26, 27, 31) !important;
+    --mantine-color-body: rgba(26, 27, 31, 0.2) !important;
+    --mantine-background-card: rgba(26, 27, 31, 0.3) !important;
+  } & {
+    --text-color: var(--mantine-color-text);
+    --icon-color-default: var(--mantine-color-text);
+  }
+}
+
+.mantine-NavLink-label {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 16px !important;
+}
+
+.mantine-ScrollArea-viewport>div>.mantine-Grid-root>.mantine-Grid-inner {
+  width: 100% !important;
+}
+
+.mantine-AppShell-root {
+  min-height: 100dvh;
+  position: relative;
+  &:before {
+    content: '';
+    @include light {
+      background-color : var(--mantine-color-gray-1);
+    }
+    @include dark {
+      background-color : var(--mantine-color-dark-7);
+    }
+    & {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(../images/background.jpg);
+      background-size: cover;
+      filter: blur(2px);
+      -webkit-backdrop-filter: blur(2px);
+      opacity: 0.25;
+      z-index: -1;
+    }
+  }
+}
+
+
+.mantine-AppShell-main {
+  --child-height: calc(100dvh - var(--app-shell-header-height, 0rem) - var(--app-shell-header-offset, 0rem) - var(--app-shell-padding) - var(--app-shell-footer-offset, 0rem) - var(--app-shell-padding));
+  min-height: var(--child-height) !important;
+}
+
+.mantine-Menu-dropdown {
+  background-color: transparent !important;
+  position: relative;
+  &:before {
+    content: '';
+    @include light {
+      background-color: rgba(255, 255, 255, 0.6) !important;
+    }
+    @include dark {
+      background-color: rgba(26, 27, 31, 0.6) !important;
+    } & {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      z-index: -1;
+    }
+  }
+}
+
+.mantine-InputWrapper-description,
+.mantine-InputWrapper-error {
+  @include light {
+    color : var(--mantine-color-gray-6);
+  }
+  @include dark {
+    color : var(--mantine-color-gray-1);
+  }
+}
+
+.mantine-Badge-label {
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  line-height: 14px !important;
+}
+
+.mantine-InputWrapper-description {
+  color: var(--mantine-color-gray-6) !important;
+}
+
+.mantine-InputWrapper-error {
+  color: red !important;
+}
+
+.mantine-Modal-root {
+  @include light {
+    --mantine-color-body: #fff !important;
+    --mantine-background-card: #fff !important;
+  }
+  @include dark {
+    --mantine-color-body: var(--mantine-color-dark-4) !important;
+    --mantine-background-card: var(--mantine-color-dark-4) !important;
+  }
+}
+
+.mantine-Progress-section {
+  &:first-of-type {
+    border-start-start-radius: var(--progress-radius) !important;
+    border-end-start-radius: var(--progress-radius) !important;
+  }
+
+  &:last-of-type {
+    border-start-end-radius: var(--progress-radius) !important;
+    border-end-end-radius: var(--progress-radius) !important;
+  }
+}
+
+.mantine-Modal-header:has(.mantine-Modal-title) {
+  /* border-bottom: solid 1px var(--mantine-color-gray-6); */
+  padding-inline: 24px;
+  padding-block: 24px;
+  padding-bottom: 0px;
+  margin-bottom: 12px;
+}
+
+.mantine-Modal-body {
+  padding-inline: 24px !important;
+  padding-bottom: 24px !important;
+}
+
+.mantine-Modal-body:has(.footerContainer) {
+  padding-bottom: 0 !important;
+}
+
+.mantine-Input-input {
+  background-color: var(--mantine-color-body) !important;
+}

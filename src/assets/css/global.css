@@ -1,0 +1,28 @@
+.button-header {
+  font-weight: 500 !important;
+}
+.button-header .tabler-icon {
+  color: inherit
+}
+.button-header:hover {
+  color: var(--mantine-color-primary-6) !important;
+}
+
+:where([data-mantine-color-scheme='light']) .button-header {
+  color: var(--mantine-color-dark-6) !important;
+}
+:where([data-mantine-color-scheme='dark']) .button-header {
+  color: var(--mantine-color-white) !important;
+}
+
+:where([data-mantine-color-scheme='light']) .button-header:hover {
+  background-color: var(--mantine-color-primary-0) !important;
+}
+:where([data-mantine-color-scheme='dark']) .button-header:hover {
+  background-color: var(--mantine-color-dark-4) !important;
+}
+
+.glassmorp {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
